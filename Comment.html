@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="CommentpageAsserts/DSSPLogo.png">
+    <title>DSSP Art gallery - Comments Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="Comment.css">
+</head>
+
+<body>
+
+    <div>
+
+        <!-- ================================ Navigation bar ================================ -->
+
+        <nav class="nav">
+
+            <img src="CommentpageAsserts/DSSPLogo.png" class="logo" alt="logo">
+
+            <ul>
+
+                <li><a href="Home.html" class="navi">Home</a></li>
+                <li><a href="Comments.html" class="navi">Comments</a></li>
+                <li><a href="index1.html" class="resolutions" id="active">Shop</a></li>
+                <li><a href="Quiz.html" class="navi">Quiz</a></li>
+                <li><a href="Gallery.html" class="navi">Gallery</a></li>
+                <li><a href="SitMap.html" class="navi">Site Map</a></li>
+                <li><a href="Creators.html" class="navi">Creators</a></li>
+                
+            </ul>
+
+        </nav>
+
+        <!-- ================================ Navigation bar end ================================ -->
+
+        <!-- ================================ Comment Form ================================ -->
+
+        <div>
+            <form method="post" action="mailto:dsspartgallery@gmail.com">
+                <fieldset class="fieldset">
+                    <div class="maindiv">
+                        <div class="div1" id="div1">
+
+                            <p>How satisfied were you with our website today? Choose from 0 to 10, where 0 is extremely
+                                dissatisfied and 10 is extremely satisfied.</p>
+
+                            <div class="ROW">
+                                <label for="radio0">&ensp;0</label><br><input type="radio" value="0" id="radio0"
+                                    name="rating" required>
+                            </div>
+
+                            <div class="ROW">
+                                <label for="radio0">&ensp;1</label><br><input type="radio" value="1" id="radio1"
+                                    name="rating" required>
+                            </div>
+
+                            <div class="ROW">
+                                <label for="radio0">&ensp;2</label><br><input type="radio" value="2" id="radio2"
+                                    name="rating" required>
+                            </div>
+
+                            <div class="ROW">
+                                <label for="radio0">&ensp;3</label><br><input type="radio" value="3" id="radio3"
+                                    name="rating" required>
+                            </div>
+
+                            <div class="ROW">
+                                <label for="radio0">&ensp;4</label><br><input type="radio" value="4" id="radio4"
+                                    name="rating" required>
+                            </div>
+
+                            <div class="ROW">
+                                <label for="radio0">&ensp;5</label><br><input type="radio" value="5" id="radio5"
+                                    name="rating" required >
+                            </div>
+
+                            <div class="ROW">
+                                <label for="radio0">&ensp;6</label><br><input type="radio" value="6" id="radio6"
+                                    name="rating" required>
+                            </div>
+
+                            <div class="ROW">
+                                <label for="radio0">&ensp;7</label><br><input type="radio" value="7" id="radio7"
+                                    name="rating" required>
+                            </div>
+
+                            <div class="ROW">
+                                <label for="radio0">&ensp;8</label><br><input type="radio" value="8" id="radio8"
+                                    name="rating" required>
+                            </div>
+
+                            <div class="ROW">
+                                <label for="radio0">&ensp;9</label><br><input type="radio" value="9" id="radio9"
+                                    name="rating" required>
+                            </div>
+
+                            <div class="ROW">
+                                <label for="radio0">10</label><br><input type="radio" value="10" id="radio10"
+                                    name="rating" required>
+                            </div>
+
+                        </div>
+
+                        <br>
+
+                        <div class="div2" id="div2">
+
+                            <p>Please could you tell us your reasons for giving this rating?</p>
+                            <textarea class="textareabox" name="reasons for giving this rating" id="textarea" rows="10" required autofocus></textarea>
+
+                        </div>
+
+                        <br>
+
+                        <div class="div3" id="div3">
+
+                            <p>How did you want to compleate this task today?(optional)</p>
+
+                            <select name="selected section 1" id="select1" class="select1" required>
+                                <option value="" selected>--Please Select--</option>
+                                <option value="Phone">Phone</option>
+                                <option value="Website">Website</option>
+                                <option value="Webchat">Webchat</option>
+                                <option value="Social media">Social media</option>
+                                <option value="Email">Email</option>
+                            </select>
+
+                        </div>
+
+                        <br>
+
+                        <div class="div4" id="div4">
+
+                            <p>If you had to compleate this task again, how would you prefer to do it?(optional)</p>
+                            <select name="selected section 2" id="select2" class="select2" required>
+                                <option value="" selected>--Please Select--</option>
+                                <option value="Phone">Phone</option>
+                                <option value="Website">Website</option>
+                                <option value="Webchat">Webchat</option>
+                                <option value="Social media">Social media</option>
+                                <option value="Email">Email</option>
+                            </select>
+
+                        </div>
+
+                        <br>
+
+                        <div class="button">
+                            <input type="submit" class="btn" onclick="openPopup()">
+                            <div class="popup" id="popup">
+                                <img src="CommentpageAsserts/tick.png" alt="Tick image">
+                                <h2>Successfully submitted.</h2>
+                                <p>Thank you for taking the time to give us your feedback on your experience today.</p>
+                                <button type="button" onclick="closePopup()">OK</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <!-- ================================ Comment Form end ================================ -->
+
+    </div>
+
+    <!-- ================================ Footer ================================ -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="footer-col">
+                    <h4>DSSP Art Gallery</h4>
+                    <p>This is an organization that encouraging talented artists. This started at 2023.06.2 as a social service .</p>
+                    <p>&copy; 2023 DSSP Art Gallery<br>All rights Reserved<br><br><a href="PageEditor2.html">Page Editor</a></p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Home Page</h4>
+                    <ul>
+                        <li><a href="./Home.html/#Art">Art of Sri Lanka</a></li>
+                        <li><a href="./Home.html/#History">History of Sri Lanka</a></li>
+                        <li><a href="./Home.html/#Bottom">The Bottom Line</a></li>
+                        <li><a href="./Home.html/#Gallery">Our Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Online shop</h4>
+                    <ul>
+                        <li><a href="./index1.html/#offer">Exclusive Offers</a></li>
+                        <li><a href="./index1.html/#all">All Items</a></li>
+                        <li><a href="./index1.html/#colours">Colour Stuffs</a></li>
+                        <li><a href="./index1.html/#brush">Brushers & Pencils</a></li>
+                        <li><a href="./index1.html/#othercr">Other Accesories</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/DSSPArtGallery/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/DSSPArtgallery"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/dsspartgallary/"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:dsspartgallery@gmail.com"><i class="fab fa-google-plus-g"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================================ Footer end ================================ -->
+
+    <!-- ================================ Script ================================ -->
+
+    <script>
+        
+        let popup = document.getElementById("popup");
+        
+        function openPopup() {
+            popup.classList.add("open-popup");
+        }
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
+
+    </script>
+
+    <!-- ================================ Script end ================================ -->
+
+</body>
+
+</html>

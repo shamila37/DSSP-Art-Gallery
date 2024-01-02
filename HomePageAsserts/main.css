@@ -1,0 +1,41 @@
+/*---------------------------------Navigation bar------------------------------------*/
+.nav {
+    position: fixed;
+    margin-top: -1%;
+    margin-left: -1%;
+    width: 101.5%;
+    height: 12vh;
+    background-color: rgba(70, 69, 69);
+    font-size: 16px;
+    z-index: 5000;
+}
+
+ul {
+    margin-left: 13%;
+    margin-top: -3.5%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: gold;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 75px;
+}
+
+.logo {
+    width:7%;
+    margin-left: 3%;
+    margin-top: 2%;
+    padding-bottom: 1%;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
